@@ -78,7 +78,7 @@ if uploaded_file is not None:
             fig, ax = plt.subplots()
 
             Question_df.iloc[DX_Manager_index].mean().plot.bar(ax=ax)
-            
+            ax.grid()
             st.pyplot(fig)
             
             st.subheader('Showing the breakdown')
@@ -99,6 +99,7 @@ if uploaded_file is not None:
 
             ax.set_xticks(np.array(list(label_dic.values())) + width, label_dic.keys(),rotation=90)
             ax.legend()
+            ax.grid()
             st.pyplot(fig)
     else:
         st.write("##")
