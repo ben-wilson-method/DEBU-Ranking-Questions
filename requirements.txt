@@ -1,0 +1,6 @@
+matplotlib==3.8.4
+matplotlib-inline==0.1.7
+pandas==2.2.2
+numpy==1.26.4
+pickleshare==0.7.5
+openpyxl==3.1.5
